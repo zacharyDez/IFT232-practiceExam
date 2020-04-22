@@ -21,4 +21,7 @@ public class CompilerError {
 		return types[type] + ":" + message;
 	}
 
+	public int getType(){
+		return type;
+	}
 }

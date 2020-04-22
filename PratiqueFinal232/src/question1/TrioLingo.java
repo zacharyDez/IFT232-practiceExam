@@ -43,7 +43,7 @@ public abstract class TrioLingo {
 	}
 
 	private void messageIntro(InterfaceUsager ui) {
-		langueComprise.msgIntro();
+		ui.afficher(langueComprise.msgIntro());
 	}
 
 }

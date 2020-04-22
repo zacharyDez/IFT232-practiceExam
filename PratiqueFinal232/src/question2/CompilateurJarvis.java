@@ -1,8 +1,8 @@
 package question2;
 
-public class CompilateurJarvis {
+public class CompilateurJarvis extends Subject{
 
-	void compile(String prog, JournalErreurs journal) {
+	void compile(String prog) {
 
 		String messages[] = { "misaligned ; ", "undefined reference: x", "lol",
 				"trolling", "j/k" };
@@ -14,7 +14,8 @@ public class CompilateurJarvis {
 			int msgPos = (int) (Math.random() * 5);
 			error = new CompilerError(type, messages[msgPos]);
 
-			journal.ajouter(error);
+			//journal.ajouter(error);
+			sendNotif(error);
 		}
 	}
 }

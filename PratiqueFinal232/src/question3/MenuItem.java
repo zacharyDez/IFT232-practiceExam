@@ -1,6 +1,6 @@
 package question3;
 
-public class MenuItem {
+public class MenuItem{
 	
 	
 	private String nomItem;
